@@ -1,0 +1,71 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body {
+  background:#555;
+}
+
+.controls {
+  height:50px;
+  display:flex;
+  align-items:center;
+  background:#ddd;
+  padding:0px 10px;
+}
+.controls .title {
+  font-weight:600;
+  color:#222;
+  width:80px;
+}
+.controls .type,
+.controls .size,
+.controls .color {
+  margin: 0px 10px;
+}
+.controls .type input {
+  display:none;
+}
+.controls .type label {
+  width:30px;
+  height:30px;
+  display:inline-block;
+  text-align:center;
+  line-height:30px;
+  margin:0px 2px;
+  cursor:pointer;
+}
+.controls .type input:checked + label {
+  background:#111;
+  color:#eee;
+  border-radius:50%;
+}
+.controls .size input {
+  height:10px;
+}
+.controls .actions {
+  flex:1;
+  text-align:right;
+}
+.controls .actions button {
+  padding:5px 10px;
+  cursor:pointer;
+}
+#pen-color {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+#pen-color::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+#pen-color::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+} 
