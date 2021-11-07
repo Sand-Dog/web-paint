@@ -15,7 +15,7 @@ function checkSelector(selector){
        line(pmouseX, pmouseY, mouseX, mouseY);
      } else {
        //change ellipse to line to sketch fabric
-       lines(mouseX, mouseY, size, size);
+       line(mouseX, mouseY, size, size);
      }
    }
    function keyPressed(e) {
